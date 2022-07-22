@@ -16,13 +16,13 @@ FRAMERATE="2"
     	-s "$SIZE" \
     	-ab 128k \
     	-b:v "$BITRATE" \
-    	-threads 6 \
+    	-threads 8 \
     	-q:a 3 \
     	-preset veryfast \
     	-vcodec libx264 \
     	-pix_fmt yuv420p \
-    	-maxrate 1800k \
-    	-bufsize 2300k \
+    	-maxrate 2500k \
+    	-bufsize 3000k \
         -framerate 30 \
     	-g 2 \
     	-strict experimental \
