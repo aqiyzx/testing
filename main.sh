@@ -4,7 +4,7 @@ QUAL="normal" # FFMPEG quality preset
 YOUTUBE_URL="rtmp://x.rtmp.youtube.com/live2" # Youtube RTMP base URL
 IMAGE="https://i.imgur.com/R5wA66L.jpg" #Picture
 SOURCE="http://145.239.254.146:8060/192h" # Radio Station
-KEY="z86v-sa8y-qk1k-w8tv-7r3e" # Stream name/key
+KEY="4mkp-0570-xf06-7gb5-41dx" # Stream name/key
 SIZE="1280x720"
 FRAMERATE="2"
 
