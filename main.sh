@@ -17,7 +17,7 @@ FRAMERATE="2"
     	-ab 128k \
     	-b:v "$BITRATE" \
     	-threads 6 \
-    	-qscale 3 \
+    	-q:a 3 \
     	-preset veryfast \
     	-vcodec libx264 \
     	-pix_fmt yuv420p \
