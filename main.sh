@@ -1,6 +1,6 @@
 BITRATE="2500k" # Bitrate of the output video
 FPS="30" # FPS video output
-QUAL="normal" # FFMPEG quality preset
+QUAL="medium" # FFMPEG quality preset
 YOUTUBE_URL="rtmp://a.rtmp.youtube.com/live2" # Youtube RTMP base URL
 IMAGE="https://i.imgur.com/o1lGQAG.png" #Picture
 SOURCE="http://squareradio.ddns.net:8000/lofi" # Radio Station
@@ -26,8 +26,9 @@ FRAMERATE="2"
     	-bufsize 2500k \
         -framerate 30 \
         -r "$FPS" \
-    	-g 15 \
+    	-g 30 \
         -bf 2 \
+        -movflags faststart \
     	-strict experimental \
     	-f flv \
     	"$YOUTUBE_URL/$KEY"
