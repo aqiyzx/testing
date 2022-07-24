@@ -24,7 +24,7 @@ FRAMERATE="2"
     	-pix_fmt yuv420p \
     	-maxrate 4000k \
     	-bufsize 2500k \
-        -framerate 120 \
+        -framerate 30 \
         -r "$FPS" \
         -keyint_min 30 \
     	-g 2 \
