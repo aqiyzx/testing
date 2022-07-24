@@ -26,7 +26,7 @@ FRAMERATE="2"
     	-bufsize 2500k \
         -framerate 30 \
         -r "$FPS" \
-    	-g 30 \
+    	-g 4 \
         -bf 2 \
         -movflags faststart \
     	-strict experimental \
