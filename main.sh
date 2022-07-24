@@ -26,7 +26,7 @@ FRAMERATE="2"
     	-bufsize 2500k \
         -framerate 120 \
         -r "$FPS" \
-        -keyint_min 30 \
+        -keyint_min 120 \
     	-g 2 \
     	-strict experimental \
     	-f flv \
