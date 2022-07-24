@@ -18,8 +18,8 @@ FRAMERATE="2"
     	-b:v "$BITRATE" \
     	-threads 6 \
     	-q:a 3 \
-        -profile:v "$QUAL"
-        -crf 18
+        -profile:v "$QUAL" \
+        -crf 18 \
     	-preset veryfast \
     	-vcodec libx264 \
         -x264-params keyint=30:no-scenecut \
