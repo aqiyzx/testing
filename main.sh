@@ -14,10 +14,12 @@ FRAMERATE="2"
     	-i "$SOURCE" \
     	-c:a aac \
     	-s "$SIZE" \
-    	-ab 128k \
+    	-b:a 128k \
     	-b:v "$BITRATE" \
     	-threads 6 \
     	-q:a 3 \
+        -profile:v "$QUAL"
+        -crf 18
     	-preset veryfast \
     	-vcodec libx264 \
         -x264-params keyint=30:no-scenecut \
@@ -27,7 +29,8 @@ FRAMERATE="2"
         -framerate 30 \
         -r "$FPS" \
         -keyint_min 30 \
-    	-g 2 \
+    	-g 15 \
+        -bf 2 \
     	-strict experimental \
     	-f flv \
     	"$YOUTUBE_URL/$KEY"
