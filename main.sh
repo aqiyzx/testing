@@ -1,10 +1,10 @@
 BITRATE="2500k" # Bitrate of the output video
 FPS="30" # FPS video output
 QUAL="normal" # FFMPEG quality preset
-YOUTUBE_URL="rtmp://x.rtmp.youtube.com/live2" # Youtube RTMP base URL
-IMAGE="https://i.imgur.com/R5wA66L.jpg" #Picture
-SOURCE="http://145.239.254.146:8060/192h" # Radio Station
-KEY="4mkp-0570-xf06-7gb5-41dx" # Stream name/key
+YOUTUBE_URL="rtmp://a.rtmp.youtube.com/live2" # Youtube RTMP base URL
+IMAGE="https://i.imgur.com/o1lGQAG.png" #Picture
+SOURCE="http://squareradio.ddns.net:8000/lofi" # Radio Station
+KEY="dwe2-rwa6-7juk-2upr-dv2e" # Stream name/key
 SIZE="1280x720"
 FRAMERATE="2"
 
@@ -16,8 +16,8 @@ FRAMERATE="2"
     	-s "$SIZE" \
     	-ab 128k \
     	-b:v "$BITRATE" \
-    	-threads 6 \
-    	-q:a 3 \
+    	-threads 10 \
+    	-q:a 8 \
     	-preset veryfast \
     	-vcodec libx264 \
     	-pix_fmt yuv420p \
