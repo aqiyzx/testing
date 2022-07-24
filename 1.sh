@@ -10,7 +10,7 @@ FRAMERATE="2"
 
     ffmpeg -re -loop 1 \
     	-framerate "$FRAMERATE" \
-    	-i "$IMAGE" \
+    	-stream_loop -1 -i "$IMAGE" \
     	-i "$SOURCE" \
     	-c:a aac \
     	-s "$SIZE" \
