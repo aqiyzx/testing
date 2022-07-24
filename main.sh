@@ -22,8 +22,8 @@ FRAMERATE="2"
     	-preset veryfast \
     	-vcodec libx264 \
     	-pix_fmt yuv420p \
-    	-maxrate 6000k \
-    	-bufsize 4000k \
+    	-maxrate 4000k \
+    	-bufsize 3800k \
         -framerate 30 \
         -r "$FPS" \
     	-g 1 \
