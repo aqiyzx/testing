@@ -2,7 +2,7 @@ BITRATE="2500k" # Bitrate of the output video
 FPS="30" # FPS video output
 QUAL="medium" # FFMPEG quality preset
 YOUTUBE_URL="rtmp://a.rtmp.youtube.com/live2" # Youtube RTMP base URL
-IMAGE="https://drive.google.com/file/d/1_AFS2CbItc3hfP1CjuQcJVNIaoz0CTw3/view?usp=drivesdk" #Picture
+IMAGE="/root/testing/lv_0_20220724201159.mp4" #Picture
 SOURCE="http://squareradio.ddns.net:8000/lofi" # Radio Station
 KEY="dwe2-rwa6-7juk-2upr-dv2e" # Stream name/key
 SIZE="1280x720"
