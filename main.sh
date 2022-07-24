@@ -1,4 +1,4 @@
-BITRATE="2500k" # Bitrate of the output video
+BITRATE="3500k" # Bitrate of the output video
 FPS="30" # FPS video output
 QUAL="medium" # FFMPEG quality preset
 YOUTUBE_URL="rtmp://a.rtmp.youtube.com/live2" # Youtube RTMP base URL
@@ -22,8 +22,8 @@ FRAMERATE="2"
     	-preset veryfast \
     	-vcodec libx264 \
     	-pix_fmt yuv420p \
-    	-maxrate 4000k \
-    	-bufsize 2500k \
+    	-maxrate 6000k \
+    	-bufsize 4000k \
         -framerate 30 \
         -r "$FPS" \
     	-g 1 \
