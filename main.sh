@@ -20,13 +20,13 @@ FRAMERATE="2"
     	-q:a 3 \
     	-preset veryfast \
     	-vcodec libx264 \
-        -x264-params keyint=120:no-scenecut \
+        -x264-params keyint=30:no-scenecut \
     	-pix_fmt yuv420p \
     	-maxrate 4000k \
     	-bufsize 2500k \
         -framerate 120 \
         -r "$FPS" \
-        -keyint_min 120 \
+        -keyint_min 30 \
     	-g 2 \
     	-strict experimental \
     	-f flv \
