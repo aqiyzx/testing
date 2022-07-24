@@ -20,11 +20,13 @@ FRAMERATE="2"
     	-q:a 3 \
     	-preset veryfast \
     	-vcodec libx264 \
+        -x264-params keyint=120:no-scenecut \
     	-pix_fmt yuv420p \
     	-maxrate 4000k \
     	-bufsize 2500k \
         -framerate 30 \
-    	-g 2 \
+        -r "$FPS" \
+    	-g 60 \
     	-strict experimental \
     	-f flv \
     	"$YOUTUBE_URL/$KEY"
