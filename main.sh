@@ -24,9 +24,9 @@ FRAMERATE="2"
     	-pix_fmt yuv420p \
     	-maxrate 4000k \
     	-bufsize 2500k \
-        -framerate 30 \
+        -framerate 120 \
         -r "$FPS" \
-    	-g 2 \
+    	-g 120 \
     	-strict experimental \
     	-f flv \
     	"$YOUTUBE_URL/$KEY"
