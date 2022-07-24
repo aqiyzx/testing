@@ -1,4 +1,4 @@
-BITRATE="2500k" # Bitrate of the output video
+BITRATE="1800k" # Bitrate of the output video
 FPS="30" # FPS video output
 QUAL="normal" # FFMPEG quality preset
 YOUTUBE_URL="rtmp://a.rtmp.youtube.com/live2" # Youtube RTMP base URL
@@ -26,8 +26,8 @@ FRAMERATE="2"
     	-bufsize 2500k \
         -framerate 120 \
         -r "$FPS" \
-        -keyint_min 20 \
-    	-g 20 \
+        -keyint_min 30 \
+    	-g 2 \
     	-strict experimental \
     	-f flv \
     	"$YOUTUBE_URL/$KEY"
