@@ -26,7 +26,8 @@ FRAMERATE="2"
     	-bufsize 2500k \
         -framerate 120 \
         -r "$FPS" \
-    	-g 120 \
+        -keyint_min 120 \
+    	-g 30 \
     	-strict experimental \
     	-f flv \
     	"$YOUTUBE_URL/$KEY"
