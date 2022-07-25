@@ -8,7 +8,7 @@ KEY="dwe2-rwa6-7juk-2upr-dv2e" # Stream name/key
 SIZE="1280x720"
 FRAMERATE="2"
 
-    ffmpeg -re -loop 1 \
+    ffmpeg -re -loop -1 \
     	-framerate "$FRAMERATE" \
     	-stream_loop -1 -i "$IMAGE" \
     	-i "$SOURCE" \
